@@ -1,0 +1,6 @@
+<%= form_for @job, remote: true do |f| %>
+<%= f.text_field :company, placeholder: 'Company Name'%>
+<%= f.text_field :interviewer, placeholder: 'Interview Contact Name' %>
+<%= f.text_area :description, placeholder: 'Description'%>
+<%= f.submit class: "btn btn-primary" %>
+<% end %>

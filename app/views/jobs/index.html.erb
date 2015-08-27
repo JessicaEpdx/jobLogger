@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h1>jobLogger</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <%= link_to "Add Job", new_job_path, remote: true, class:'btn btn-danger add-job' %>
+    <div class="add-job-form"></div>
+  </div>
+  <div class="col-sm-6">
+    <h3>JOBS</h3>
+    <div class="jobs">
+      <%= render 'alljobs' %>
+    </div>
+  </div>
+</div>
